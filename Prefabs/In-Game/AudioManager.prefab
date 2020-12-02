@@ -1,0 +1,269 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2443627077959609846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2443627077959609834}
+  - component: {fileID: 2443627077959609835}
+  - component: {fileID: 2443627077959609844}
+  - component: {fileID: 2443627077959609845}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2443627077959609834
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2443627077959609846}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 97.951836, y: 2155.0193, z: -947.9662}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &2443627077959609835
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2443627077959609846}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &2443627077959609844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2443627077959609846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886e032d21ee42a4b8eb8e854c3e25ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Classroom
+    clip: {fileID: 8300000, guid: caf1c2555668a0546838e160dc2b3571, type: 3}
+    volume: 0.5
+    loop: 1
+    source: {fileID: 2443627077959609835}
+  - name: Beach
+    clip: {fileID: 8300000, guid: bec6a5a9c9d21ff4297064c658abf564, type: 3}
+    volume: 0.5
+    loop: 1
+    source: {fileID: 2443627077959609835}
+  - name: Despair
+    clip: {fileID: 8300000, guid: 65fa500c5407d204cad9a24d50d98cec, type: 3}
+    volume: 0.243
+    loop: 1
+    source: {fileID: 2443627077959609835}
+  - name: Chapter Complete
+    clip: {fileID: 8300000, guid: 82333fff58ff1354aaa7c169ac7a9ab8, type: 3}
+    volume: 0.295
+    loop: 0
+    source: {fileID: 2443627077959609835}
+  - name: Save
+    clip: {fileID: 8300000, guid: 5d0d1f476254b164a9924fac59af49f9, type: 3}
+    volume: 0.304
+    loop: 0
+    source: {fileID: 2443627077959609835}
+  - name: Game Over
+    clip: {fileID: 8300000, guid: 7b2faac7c972d114ea02e2413e69f795, type: 3}
+    volume: 0.301
+    loop: 0
+    source: {fileID: 2443627077959609835}
+  - name: Residence
+    clip: {fileID: 8300000, guid: 4bb7ac41294481545879ff318f7872a5, type: 3}
+    volume: 0.309
+    loop: 1
+    source: {fileID: 2443627077959609835}
+  - name: TVOn
+    clip: {fileID: 8300000, guid: 8e4509ce2f6c78d4683f84eac96c7a24, type: 3}
+    volume: 0.348
+    loop: 0
+    source: {fileID: 2443627077959609835}
+  - name: Static
+    clip: {fileID: 8300000, guid: 33cc475d871218548935fe72d9ef950a, type: 3}
+    volume: 0.329
+    loop: 1
+    source: {fileID: 2443627077959609835}
+  - name: Windmill
+    clip: {fileID: 8300000, guid: 64be92db7c9b52f4a8e0ffa007ee4337, type: 3}
+    volume: 0.343
+    loop: 1
+    source: {fileID: 2443627077959609835}
+  - name: Door Knocking
+    clip: {fileID: 8300000, guid: 832a45601f2d2694796ce02b3947f52b, type: 3}
+    volume: 0.343
+    loop: 0
+    source: {fileID: 2443627077959609835}
+  - name: Love
+    clip: {fileID: 8300000, guid: 00edf353f03d4a540b3e1b5fd2d3aaf5, type: 3}
+    volume: 0.343
+    loop: 0
+    source: {fileID: 2443627077959609835}
+  - name: FGF 1
+    clip: {fileID: 8300000, guid: 60fb9c33c76a33e41a9b3e2b78d0fc80, type: 3}
+    volume: 0.343
+    loop: 0
+    source: {fileID: 2443627077959609835}
+  - name: FGF 2
+    clip: {fileID: 8300000, guid: 415c86f36d0b26b45b34f3b0d2334e97, type: 3}
+    volume: 0.343
+    loop: 0
+    source: {fileID: 2443627077959609835}
+  - name: Door Kick
+    clip: {fileID: 8300000, guid: 2d4098e1bf91ac24ab536d8683f6ea52, type: 3}
+    volume: 0.301
+    loop: 0
+    source: {fileID: 2443627077959609835}
+  - name: Russian Roulette
+    clip: {fileID: 8300000, guid: a26e001ab76da4b4eb34a474407bd2fc, type: 3}
+    volume: 0.438
+    loop: 0
+    source: {fileID: 2443627077959609835}
+  - name: Cave
+    clip: {fileID: 8300000, guid: b7451d05a225bcb469508453c04412aa, type: 3}
+    volume: 0.394
+    loop: 0
+    source: {fileID: 2443627077959609835}
+  - name: Abyss
+    clip: {fileID: 8300000, guid: 48bf6bc5a6f64bf43a4bce3ccf32d52f, type: 3}
+    volume: 0.394
+    loop: 0
+    source: {fileID: 2443627077959609835}
+  - name: Blurred Distance
+    clip: {fileID: 8300000, guid: b350be46cbcb4ab4ba26dcb56c90ca9c, type: 3}
+    volume: 0.394
+    loop: 1
+    source: {fileID: 2443627077959609835}
+  - name: Meow
+    clip: {fileID: 8300000, guid: 2f44e9f895b6f88418e982f0a155e800, type: 3}
+    volume: 0.394
+    loop: 0
+    source: {fileID: 2443627077959609835}
+  - name: Purr
+    clip: {fileID: 8300000, guid: ad314e8a85deac14382ee5c006c8949a, type: 3}
+    volume: 0.394
+    loop: 0
+    source: {fileID: 2443627077959609835}
+  animator: {fileID: 2443627077959609845}
+--- !u!95 &2443627077959609845
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2443627077959609846}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0c04fc0e7c767c84281d785387e19b50, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
